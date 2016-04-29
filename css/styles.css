@@ -373,36 +373,19 @@ textarea {
   background-size: $width;
 } */
 /*
-base css rules
-Guy Whorley
-*/
-/* comment visible in processed css file */
+    My base css file
 /*! This comment will always be visible, even with compression */
 * {
   font-family: "Raleway", sans-serif;
   color: black; }
 
-#wrapper {
-  padding: 0 15px; }
+body {
+  width: 960px; }
 
-.jumbotron {
-  background: linear-gradient(to bottom right, #184026, #317F4B);
-  background: -webkit-linear-gradient(left top, #184026, #317F4B);
-  background: -o-linear-gradient(bottom right, #184026, #317F4B);
-  background: -moz-linear-gradient(bottom right, #184026, #317F4B);
-  background: #184026; }
-  .jumbotron div {
-    color: gray; }
-
-.list-group {
-  font-size: 1.0rem; }
-  .list-group li, .list-group a {
-    color: white; }
-  .list-group li {
-    background-color: #184026; }
-  .list-group li:hover {
-    background-color: #317F4B;
-    font-weight: 800; }
+.row div {
+  outline: 1px solid gray;
+  width: 50px;
+  with: 60px; }
 
 /* example
 .rounded {
