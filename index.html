@@ -21,34 +21,41 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="header" class="row">
-            <div class="h1">Guy Whorley <small>My tagline here</small></div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-md-5 h1">Guy Whorley</div>
+            <div class="col-md-7 text-left">
+                <h3>Full-Stack Developer: <small>Python, Ruby on Rails, MySQL, BootStrap, Angular,Node</small></h3>
+            </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div id="tiles" class="col-md-12">
-                <div classes="row">
-                    <div class="tile col-md-2"></div>
-                    <div class="tile col-md-2">About</div>
-                    <div class="tile col-md-2">Project1</div>
-                    <div class="tile col-md-2">Project2</div>
-                </div>
-                <div classes="row">
-                    <div class="tile col-md-2"></div>
-                    <div class="tile col-md-2">GitHub</div>
-                    <div class="tile col-md-2">Live Demo</div>
-                    <div class="tile col-md-2">Data Stream</div>
-                </div>
-                <div classes="row">
-                    <div class="tile col-md-2"></div>
-                    <div class="tile col-md-2">LinkedIn</div>
-                    <div class="tile col-md-2">Contact Me</div>
-                    <div class="tile col-md-2">Data Stream</div>
-                </div>
+            <div class="col-md-3 content-window">
+                <p>My Projects</p>
+                <ul class="list-group">
+                    <li class="list-group-item">GitHub: <a href="#">GuyWhorley</a></li>
+                    <li class="list-group-item">LinkedIn: <a href="#">http://linkedin.com/guywhorley</a></li>
+                    <li class="list-group-item">Resume on <a href="">Google Drive</a></li>
+                    <li class="list-group-item"><a href="">Web-test project at AWS</a></li>
+                </ul>
             </div>
-            <div id="footer" class="col-md-12">Footer text</div>
+            <div  id="about-me" class="col-md-6 content-window">
+                <div class="h2">About Me</div>
+                <p><span class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed aliquam risus.</span> Etiam sodales turpis quis quam blandit, non porta eros dictum. Nam aliquam auctor est, in commodo odio commodo vitae. Fusce viverra velit odio, ac posuere enim facilisis ut. Nullam in hendrerit mauris. Praesent accumsan libero odio, a interdum quam ornare ut. Integer a volutpat turpis. Vivamus interdum nisi sit amet urna interdum consequat. Quisque ante eros, lacinia nec nisl ac, finibus molestie orci. Sed vehicula augue quis fringilla pellentesque. Curabitur laoreet posuere libero vitae pharetra. Cras rhoncus vehicula dapibus. Phasellus convallis elementum nisi at tristique. Donec nec enim.</p>
+            </div>
+            <div class="col-md-3 content-window">
+                <div id="factoid" class="h3">Random Factoid Generator</div>
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac odio feugiat, porttitor turpis ut, tincidunt lorem.<cite><small>Guy Whorley</small></cite>
+                </blockquote>
+                <button class="btn btn-default">Get Another Fact</button>
+            </div>
+         </div>
+
+        <div class="row footer">
+            <hr />
+            <div class="col-md-12 h6">Created by Guy Whorley &copy 2016</div>
         </div>
     </div>
 </body>

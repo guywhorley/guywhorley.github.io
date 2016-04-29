@@ -1,19 +1,34 @@
 /*
-    My base css file
+base css rules
+Guy Whorley
+*/
+/* comment visible in processed css file */
+// comment that IS NOT visible when processed
+//
 /*! This comment will always be visible, even with compression */
 * {
     font-family: $font-main;
     color: $black;
 }
+#wrapper { padding: 0 15px; }
+.jumbotron {
+    background: linear-gradient(to bottom right, $clr-primary, $clr-secondary);
+    background: -webkit-linear-gradient(left top, $clr-primary, $clr-secondary);
+    background: -o-linear-gradient(bottom right, $clr-primary, $clr-secondary);
+    background: -moz-linear-gradient(bottom right, $clr-primary, $clr-secondary);
+    background: $clr-primary;
+    div { color: $gray; }
+} //jumbotron
+.list-group {
+    font-size: 1.0rem;
+    li, a { color: $white; }
+    li { background-color: $clr-primary; }
+    li:hover {
+        background-color: $clr-secondary;
+        font-weight: 800;
+    } //li
+} //list-group
+#jumbotron.container {
 
-
-body {
-    width: 960px;
-}
-.row div {
-    //display: inline-block;
-    outline: 1px solid $gray;
-    width: 50px;
-    with: 60px;
 
 }
