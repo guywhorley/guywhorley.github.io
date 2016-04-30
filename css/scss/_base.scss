@@ -1,34 +1,73 @@
 /*
-base css rules
-Guy Whorley
-*/
-/* comment visible in processed css file */
-// comment that IS NOT visible when processed
-//
+    My base css file
 /*! This comment will always be visible, even with compression */
 * {
     font-family: $font-main;
-    color: $black;
+    color: black;
+    li { list-style-type: none; }
 }
-#wrapper { padding: 0 15px; }
-.jumbotron {
-    background: linear-gradient(to bottom right, $clr-primary, $clr-secondary);
-    background: -webkit-linear-gradient(left top, $clr-primary, $clr-secondary);
-    background: -o-linear-gradient(bottom right, $clr-primary, $clr-secondary);
-    background: -moz-linear-gradient(bottom right, $clr-primary, $clr-secondary);
-    background: $clr-primary;
-    div { color: $gray; }
-} //jumbotron
-.list-group {
-    font-size: 1.0rem;
-    li, a { color: $white; }
-    li { background-color: $clr-primary; }
-    li:hover {
-        background-color: $clr-secondary;
-        font-weight: 800;
-    } //li
-} //list-group
-#jumbotron.container {
+ /* The html and body elements cannot have any padding or margin. */
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+#top {
+    width: 100%;
+    height: 150px;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+        padding-left: 30px;
+        font-size: 3.0em;
+        vertical-align: center;
+        color: $white;
+        text-align: left;
+        em { color: $white; }
+    }
+}
+#main-row { height: auto; }
+#menu { padding: 20px 30px; }
+li { padding: 10px; }
+#content-panel {
+    font-size: 2.0rem;
+    padding: 20px;
+    #lead-content p {
+        text-align: justify;
+        margin: 20px 0;
+    }
+    a { text-decoration: none; }
+}
 
+#aside {
+    text-align: left;
+    vertical-align: bottom;
+    div { margin: 20px 0; }
+    .fact, q { color: #444444; }
+    cite { color: #dgray; };
+    .fact {
+        margin: 10px;
+        padding: 10px;
+        font-size: 16pt;
+        font-style: italic;
+    }
+}
+audio { visibility: hidden;}
 
+/* Set the fixed height of the footer here */
+#footer {
+    text-align: center;
+    text-size: small;
+    height: 60px;
+    background-color:$white;
+    hr { width: 90%; }
 }
