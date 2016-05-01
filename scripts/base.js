@@ -7,47 +7,45 @@ $(document).ready(function() {
     //logEnabled=false;
     //log.debug("Start doc.ready().","text-transform: uppercase");
 
-    // Build nav menu
-    $(".professional").click(//hover(
-        function() { buildMenu(lead, textCareer); }); //},
-        //function() {}); // $(this).mouseout(clearTxt()); });
-    //});
 
-    $(".personal").click(
+    $(".dropdown-menu").click(function() {
+        playDrop();
+    });
+
+    $(".dropdown-toggle").click(function() {
+        playDrop();
+    });
+
+
+    $("#AtWork").click(
+    function() { buildMenu(lead, textCareer); }); //},
+
+    $("#AtHome").click(
         function() { buildMenu(lead, textPersonal); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".dev-tools").click(
+    $(".dev-tools a").click(
         function() { buildMenu(lead, textDevTech); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".qa-tools").click(
+    $(".qa-tools a").click(
         function() { buildMenu(lead, textQATech); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".project-1").click(
+    $(".project-1 a").click(
         function() { buildMenu(lead, dummyText); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".project-2").click(
+    $(".project-2 a").click(
         function() { buildMenu(lead, dummyText);});
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".linkedin").click(
+    $(".linkedin a").click(
         function() { buildMenu(lead, dummyText); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".github").click(
+    $(".github a").click(
         function() { buildMenu(lead, gitHub); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".resume").click(
+    $(".resume a").click(
         function() { buildMenu(lead, dummyText); });
-        //function() { $(this).mouseout(clearTxt()); });
 
-    $(".contact-me").click(
+    $(".contact-me a").click(
         function() { buildMenu(lead, dummyText); });
-        //function() { $(this).mouseout(clearTxt()); });
 
     $("#menu").menu({position: {my:"left top", at: "left-1 top:+35", } });
 
@@ -69,7 +67,11 @@ $(document).ready(function() {
     } //marqueeMessage
 
     // play menu click
-    function playDrop() { document.getElementById("openItem").play(); }
+    function playDrop() {
+        var audio = document.getElementById("openItem");
+        audio.volume = 0.05;
+        audio.play(); //document.getElementById("openItem").play();
+    }
 
     // set text, fade-in, play click
     function buildMenu(sel, content) {
@@ -77,6 +79,7 @@ $(document).ready(function() {
         $(sel).show("scale", tmrShort, playDrop());
         displayFactoid();
     } //buildMenu
+
 
     // clear out content panel by fade-out
     //function clearTxt() {

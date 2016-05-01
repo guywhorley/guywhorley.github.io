@@ -1,0 +1,82 @@
+body {
+	background-image: url('../images/front.png');
+	background-size: 80%;
+	font-family: 'Josefin Sans', sans-serif;
+	}
+	
+#startPage, #gamePage {
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 480px;
+	height: 480px;
+	margin: 175px 70px;
+	padding: 10px;
+	box-shadow: 5px 5px 10px gray;
+	}	
+
+#rules {
+	color: black;
+	}
+	
+hr {
+	margin: 10px 0 0 10px;
+	}
+	
+#startPage {
+	background-image: url('../images/aperature1.png');
+	background-size: 100%;
+	background-position: center;
+	
+	line-height: 1.4em;
+	}
+
+#gameHeader {
+	color: steelblue;
+} 
+	
+#gamePage {
+	background-color: white;
+	color: black;
+	}
+	
+.hidden  { display: none; }
+.visible { display: block; }
+		
+footer {
+	width: 510px;
+	margin: -160px 70px;
+	color: steelblue;
+	font-size: .8em;
+	text-align: center;
+	}
+	
+#inpGuess {
+	margin-left: 3px;
+}
+	
+div,h1 {
+	padding: 10px;
+	margin: 10px;
+	}
+
+fieldset {
+	height: 400px;
+	}
+	
+#btnPlayGame, #btnSubmitGuess {
+	border-radius: 25px;
+	background-color: white;
+	color: steelblue;
+	}	
+	
+#btnPlayGame {
+	margin-top:195px;
+	margin: 190px auto 0 20px;
+	width: 90%;
+	}
+	
+#btnSubmitGuess {
+	width: 50%;
+	margin-left: 20px;
+	}

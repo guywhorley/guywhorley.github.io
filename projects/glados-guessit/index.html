@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Number Guessing Game</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!-- Start Page -->
+		<div id="startPage" class="start">
+			<div id="startHeader">Header</div>
+			<div id="content"><button id="btnPlayGame"><strong>Let the Games Begin</strong></button></div>
+		</div>
+		<!-- Game Page -->
+		<div id="gamePage" class="hidden">
+			<div id="gameTitle">GlaDOS v1.2 Interface</div>
+			<fieldset><legend>Guesses</legend>
+			<div>Enter your guess
+				<input type="text" id="inpGuess" size="2" maxlength="2" placeholder="nn" autofocus/>
+				<button id="btnSubmitGuess">Submit Your Guess</button>
+				<span id="guessesLeft"></span><br>
+				<span id="crumb">Previous Futile Attempts: </span>				
+			</div>
+			<div id="gameHeader">Header - GamePage</div>
+			</fieldset>
+		</div>
+		<footer><h4>Guy Whorley, 2015</h4></footer>
+		<script src="scripts/game.js"></script>		
+	</body>
+</html>
